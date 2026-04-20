@@ -1,0 +1,7 @@
+# Parametros del Caso 3
+ni=4
+baseEventos=5
+nc=3
+ns=3
+tam1=8
+tam2=6

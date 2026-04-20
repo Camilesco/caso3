@@ -1,0 +1,75 @@
+### config/config_ejemplo.txt
+=== RESULTADO SIMULACION CASO 3 ===
+Configuracion{ni=4, baseEventos=5, nc=3, ns=3, tam1=8, tam2=6, totalEsperado=50}
+
+--- Resumen cuantitativo ---
+Eventos generados: 50
+Broker procesados: 50
+Enviados a alertas: 3
+Enviados a clasificacion por broker: 47
+Alertas aprobadas por administrador: 1
+Alertas descartadas por administrador: 2
+Eventos clasificados: 48
+Eventos procesados por servidores: 48
+Fines a clasificadores: 3
+Fines a servidores: 3
+Max entrada: 19
+Max alertas: 1
+Max clasificacion: 8
+Max buzon servidor 1: 6
+Max buzon servidor 2: 6
+Max buzon servidor 3: 6
+
+--- Validaciones ---
+[OK] Todos los sensores generaron el total esperado -> 50 / 50
+[OK] El broker proceso todos los eventos esperados -> 50 / 50
+[OK] Conservacion en broker -> alertas + clasificacion = 50
+[OK] Conservacion en administrador -> aprobadas + descartadas = 3
+[OK] Los clasificadores reenviaron todos los normales -> 48 / 48
+[OK] Los servidores procesaron todos los eventos normales -> 48 / 48
+[OK] Se enviaron nc eventos de fin a clasificadores -> 3 / 3
+[OK] Se enviaron ns eventos de fin a servidores -> 3 / 3
+[OK] Todos los buzones terminaron vacios -> ok
+[OK] La ocupacion maxima del buzon de clasificacion respeto tam1 -> 8 / cap 8
+[OK] La ocupacion maxima de buzones de servidores respeto tam2 -> S1=6/6, S2=6/6, S3=6/6
+
+
+
+### config/config_prueba_media.txt
+=== RESULTADO SIMULACION CASO 3 ===
+Configuracion{ni=5, baseEventos=4, nc=4, ns=3, tam1=6, tam2=5, totalEsperado=60}
+
+--- Resumen cuantitativo ---
+Eventos generados: 60
+Broker procesados: 60
+Enviados a alertas: 10
+Enviados a clasificacion por broker: 50
+Alertas aprobadas por administrador: 3
+Alertas descartadas por administrador: 7
+Eventos clasificados: 53
+Eventos procesados por servidores: 53
+Fines a clasificadores: 4
+Fines a servidores: 3
+Max entrada: 29
+Max alertas: 2
+Max clasificacion: 6
+Max buzon servidor 1: 5
+Max buzon servidor 2: 5
+Max buzon servidor 3: 5
+
+--- Validaciones ---
+[OK] Todos los sensores generaron el total esperado -> 60 / 60
+[OK] El broker proceso todos los eventos esperados -> 60 / 60
+[OK] Conservacion en broker -> alertas + clasificacion = 60
+[OK] Conservacion en administrador -> aprobadas + descartadas = 10
+[OK] Los clasificadores reenviaron todos los normales -> 53 / 53
+[OK] Los servidores procesaron todos los eventos normales -> 53 / 53
+[OK] Se enviaron nc eventos de fin a clasificadores -> 4 / 4
+[OK] Se enviaron ns eventos de fin a servidores -> 3 / 3
+[OK] Todos los buzones terminaron vacios -> ok
+[OK] La ocupacion maxima del buzon de clasificacion respeto tam1 -> 6 / cap 6
+[OK] La ocupacion maxima de buzones de servidores respeto tam2 -> S1=5/5, S2=5/5, S3=5/5
+
+
+
+### config/config_prueba_alta.txt

@@ -1,0 +1,6 @@
+ni=6
+baseEventos=6
+nc=4
+ns=4
+tam1=7
+tam2=4
