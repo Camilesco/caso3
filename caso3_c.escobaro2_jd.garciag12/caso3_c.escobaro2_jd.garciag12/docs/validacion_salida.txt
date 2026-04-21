@@ -73,3 +73,37 @@ Max buzon servidor 3: 5
 
 
 ### config/config_prueba_alta.txt
+=== RESULTADO SIMULACION CASO 3 ===
+Configuracion{ni=6, baseEventos=6, nc=4, ns=4, tam1=7, tam2=4, totalEsperado=126}
+
+--- Resumen cuantitativo ---
+Eventos generados: 126
+Broker procesados: 126
+Enviados a alertas: 11
+Enviados a clasificacion por broker: 115
+Alertas aprobadas por administrador: 1
+Alertas descartadas por administrador: 10
+Eventos clasificados: 116
+Eventos procesados por servidores: 116
+Fines a clasificadores: 4
+Fines a servidores: 4
+Max entrada: 94
+Max alertas: 2
+Max clasificacion: 7
+Max buzon servidor 1: 4
+Max buzon servidor 2: 4
+Max buzon servidor 3: 4
+Max buzon servidor 4: 4
+
+--- Validaciones ---
+[OK] Todos los sensores generaron el total esperado -> 126 / 126
+[OK] El broker proceso todos los eventos esperados -> 126 / 126
+[OK] Conservacion en broker -> alertas + clasificacion = 126
+[OK] Conservacion en administrador -> aprobadas + descartadas = 11
+[OK] Los clasificadores reenviaron todos los normales -> 116 / 116
+[OK] Los servidores procesaron todos los eventos normales -> 116 / 116
+[OK] Se enviaron nc eventos de fin a clasificadores -> 4 / 4
+[OK] Se enviaron ns eventos de fin a servidores -> 4 / 4
+[OK] Todos los buzones terminaron vacios -> ok
+[OK] La ocupacion maxima del buzon de clasificacion respeto tam1 -> 7 / cap 7
+[OK] La ocupacion maxima de buzones de servidores respeto tam2 -> S1=4/4, S2=4/4, S3=4/4, S4=4/4
