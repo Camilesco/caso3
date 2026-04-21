@@ -34,6 +34,41 @@ Max buzon servidor 3: 6
 [OK] La ocupacion maxima de buzones de servidores respeto tam2 -> S1=6/6, S2=6/6, S3=6/6
 
 
+###config/config_prueba_minima.txt
+=== RESULTADO SIMULACION CASO 3 ===
+Configuracion{ni=2, baseEventos=2, nc=2, ns=2, tam1=3, tam2=2, totalEsperado=6}
+
+--- Resumen cuantitativo ---
+Eventos generados: 6
+Broker procesados: 6
+Enviados a alertas: 1
+Enviados a clasificacion por broker: 5
+Alertas aprobadas por administrador: 0
+Alertas descartadas por administrador: 1
+Eventos clasificados: 5
+Eventos procesados por servidores: 5
+Fines a clasificadores: 2
+Fines a servidores: 2
+Max entrada: 2
+Max alertas: 1
+Max clasificacion: 3
+Max buzon servidor 1: 2
+Max buzon servidor 2: 2
+
+--- Validaciones ---
+[OK] Todos los sensores generaron el total esperado -> 6 / 6
+[OK] El broker proceso todos los eventos esperados -> 6 / 6
+[OK] Conservacion en broker -> alertas + clasificacion = 6
+[OK] Conservacion en administrador -> aprobadas + descartadas = 1
+[OK] Los clasificadores reenviaron todos los normales -> 5 / 5
+[OK] Los servidores procesaron todos los eventos normales -> 5 / 5
+[OK] Se enviaron nc eventos de fin a clasificadores -> 2 / 2
+[OK] Se enviaron ns eventos de fin a servidores -> 2 / 2
+[OK] Todos los buzones terminaron vacios -> ok
+[OK] La ocupacion maxima del buzon de clasificacion respeto tam1 -> 3 / cap 3
+[OK] La ocupacion maxima de buzones de servidores respeto tam2 -> S1=2/2, S2=2/2
+
+
 
 ### config/config_prueba_media.txt
 === RESULTADO SIMULACION CASO 3 ===
